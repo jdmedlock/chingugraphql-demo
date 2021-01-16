@@ -1,4 +1,5 @@
 const { ApolloServer } = require('apollo-server');
+require('dotenv').config()
 const { typeDefs } = require('./src/schema/books.gql')
 const resolvers = require('./src/resolvers/queries/books.js')
 

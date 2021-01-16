@@ -4,12 +4,14 @@
   "description": "Demonstration GraphQL server for Chingu Roundtable",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "nodemon --watch src node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "apollo-server": "^2.19.1",
-    "graphql": "^15.4.0"
+    "dotenv": "^8.2.0",
+    "graphql": "^15.4.0",
+    "pg": "^8.5.1"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/jdmedlock/chingugraphql-demo/issues"
   },
-  "homepage": "https://github.com/jdmedlock/chingugraphql-demo#readme"
+  "homepage": "https://github.com/jdmedlock/chingugraphql-demo#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
